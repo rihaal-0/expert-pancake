@@ -12,7 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy bot code
-COPY bot.py .
+COPY main.py .
 
 # Use environment variables from .env
 ENV PYTHONUNBUFFERED=1
